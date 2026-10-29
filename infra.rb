@@ -5,11 +5,11 @@
 class Infra < Formula
   desc ""
   homepage "https://github.com/rswiftoffice/infra"
-  version "6.0.5"
+  version "6.0.6"
 
   on_macos do
-    url "https://github.com/rswiftoffice/infra/releases/download/6.0.5/infra_6.0.5_darwin_all.tar.gz"
-    sha256 "995c86a01cc8cf9bbf9e78f9f8f2173bb02e15e2dcb6d8555845bc10db9edee9"
+    url "https://github.com/rswiftoffice/infra/releases/download/6.0.6/infra_6.0.6_darwin_all.tar.gz"
+    sha256 "fcb9df2d70c20c423de38ff6cc7d39890906ea000b348a954e073504cc8c0cbc"
 
     define_method(:install) do
       bin.install "infra"
@@ -18,15 +18,15 @@ class Infra < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rswiftoffice/infra/releases/download/6.0.5/infra_6.0.5_linux_amd64.tar.gz"
-      sha256 "5b5cfa32d439825663891fa0da8d71a91243f4dba9e24c11b517500257897283"
+      url "https://github.com/rswiftoffice/infra/releases/download/6.0.6/infra_6.0.6_linux_amd64.tar.gz"
+      sha256 "55f17fcce2c689b7ffc3e871da40a7b030028ecb2fa64d26a9e9f47bdecaab02"
       define_method(:install) do
         bin.install "infra"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rswiftoffice/infra/releases/download/6.0.5/infra_6.0.5_linux_arm64.tar.gz"
-      sha256 "6790bae187df433416bc6ad6383bf9dd0482ab291f5a40f1ca5e2f2fffe3be06"
+      url "https://github.com/rswiftoffice/infra/releases/download/6.0.6/infra_6.0.6_linux_arm64.tar.gz"
+      sha256 "e3184713be85f907dabd2a3801037c4e91c152cf9012535f57732d6fbc5830d6"
       define_method(:install) do
         bin.install "infra"
       end
